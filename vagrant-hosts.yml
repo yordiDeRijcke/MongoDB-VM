@@ -25,4 +25,4 @@
 #
 # [1] http://docs.vagrantup.com/v2/synced-folders/basic_usage.html
 
-- name: MongoDB-server
+- name: MongoDB-Server

@@ -135,6 +135,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	lv.memory = host['memory'] ||= 1024
 	lv.cpus = host['cpus'] ||= 1
       end
+
+      node.vm.provision 'shell' do |sh|
+        sh.path = 'scripts/MongoDB-Server.sh'
+      end
     end
   end
 end
