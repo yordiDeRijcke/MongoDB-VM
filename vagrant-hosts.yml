@@ -26,6 +26,8 @@
 # [1] http://docs.vagrantup.com/v2/synced-folders/basic_usage.html
 
 - name: MongoDB-Server
+  cpus: 2
+  memory: 1024
   forwarded_ports:
     - host: 27017
       guest: 27017
