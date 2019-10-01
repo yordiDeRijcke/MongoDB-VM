@@ -29,3 +29,6 @@
   forwarded_ports:
     - host: 27017
       guest: 27017
+  synced_folders:
+    - src: vm_share
+      dest: /mnt/vm_share
